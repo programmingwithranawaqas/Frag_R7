@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5D5E5C"
+
     tools:context=".ListFrag">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="List Fragment"
+        android:id="@android:id/list"
         android:gravity="center"
-        android:textColor="@color/white"/>
+        />
 
 </FrameLayout>

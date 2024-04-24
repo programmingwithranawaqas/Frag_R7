@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7D3E1C"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".ContentFrag">
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_person"
+        android:id="@+id/ivProfilePic"
+        android:contentDescription="Profile pic" />
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Content Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:id="@+id/tvName"
+        android:textSize="19sp"
         android:gravity="center"
-        android:textColor="@color/white"/>
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="10dp"
+        android:background="@color/black"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_phone"
+        android:id="@+id/ivPhone"
+        android:contentDescription="Icon Call" />
+<ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_location"
+        android:id="@+id/ivLocation"
+        android:contentDescription="Icon Location" />
+<ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_url"
+        android:id="@+id/ivUrl"
+        android:contentDescription="Icon Url" />
 
-</FrameLayout>
+</LinearLayout>
